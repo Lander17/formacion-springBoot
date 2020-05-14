@@ -2,27 +2,38 @@ package es.soprasteria.formacion.dto;
 
 public class PersonaDTO {
 
-	private String name;
-	private Integer age;
+	private String nif;
+	private String fullName;
+	private Integer year;
 
-	public PersonaDTO(String name, Integer age) {
-		this.name = name;
-		this.age = age;
+	public PersonaDTO(String nif, String fullName, Integer year) {
+		this.nif = nif;
+		this.fullName = fullName;
+		this.year = year;
 	}
 
-	public String getName() {
-	    return name;
+	public String getNif() {
+		return nif;
 	}
 
-	public void setName(String name) {
-	    this.name = name;
+	public void setNif(String nif) {
+		this.nif = nif;
 	}
 
-	public Integer getAge() {
-	    return age;
+	public String getFullName() {
+		return fullName;
 	}
 
-	public void setAge(Integer age) {
-	    this.age = age;
+	public void setFullName(String fullName) {
+		this.fullName = fullName;
 	}
+
+	public Integer getYear() {
+		return year;
+	}
+
+	public void setYear(Integer year) {
+		this.year = year;
+	}
+
 }

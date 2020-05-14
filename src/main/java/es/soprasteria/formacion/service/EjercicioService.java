@@ -6,10 +6,14 @@ import es.soprasteria.formacion.dto.PersonaDTO;
 
 public interface EjercicioService {
 	
-	PersonaDTO getByName(String name);
+	PersonaDTO getByNif(String nif);
 	
 	List<PersonaDTO> getAllPersons();
 	
 	PersonaDTO createPerson(PersonaDTO newPersona);
+	
+	PersonaDTO editPerson(PersonaDTO newPersona);
+	
+	void deleteByNif(String nif);
 
 }
